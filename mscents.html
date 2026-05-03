@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M-scents | TM's Perfume Paradise</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assets/logo.png" alt="TM Logo">
+      <span>TM's</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+
+      <li class="dropdown">
+        <a href="#">Shop</a>
+        <ul class="dropdown-menu">
+          <li><a href="skincare.html">Skin Care</a></li>
+          <li><a href="villa.html">Villa</a></li>
+          <li><a href="mscents.html">M-scents</a></li>
+          <li><a href="fine-fragrances.html">Fine Fragrances</a></li>
+          <li><a href="dubai.html">Dubai Scents</a></li>
+        </ul>
+      </li>
+
+      <li><a href="item-request.html">Item Request</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="cart-btn" href="cart.html" onclick="openCart()">Cart <span id="cart-count">0</span></a></li>
+    </ul>
+  </nav>
+
+  <section class="shop-hero">
+    <p class="section-tag">M-scents Collection</p>
+    <h1>Choose Your M-scent</h1>
+    <p>80ml = R180 | 40ml = R100</p>
+  </section>
+
+  <section class="products-section">
+
+    <div class="products-grid">
+
+      <div class="product-card">
+        <img src="assets/M scents/ARYA HER.png" alt="Arya Her">
+        <h3>ARYA</h3>
+        <p>Ladies fragrance.</p>
+        <select class="size-select" id="arya-size">
+          <option value="180">80ml - R180</option>
+          <option value="100">40ml - R100</option>
+        </select>
+        <button onclick="addMscentsToCart('ARYA HER', 'arya-size')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/M scents/B EDITION MAN HIM.png" alt="B Edition Man Him">
+        <h3>B EDITION MAN</h3>
+        <p>Men fragrance.</p>
+        <select class="size-select" id="b-edition-size">
+          <option value="180">80ml - R180</option>
+          <option value="100">40ml - R100</option>
+        </select>
+        <button onclick="addMscentsToCart('B EDITION MAN HIM', 'b-edition-size')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/M scents/B.R.640 UNI.png" alt="B.R.640 Uni">
+        <h3>B.R.640</h3>
+        <p>Unisex fragrance.</p>
+        <select class="size-select" id="br640-size">
+          <option value="180">80ml - R180</option>
+          <option value="100">40ml - R100</option>
+        </select>
+        <button onclick="addMscentsToCart('B.R.640 UNI', 'br640-size')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/M scents/BERRY & BERRY HER.png" alt="Berry and Berry Her">
+        <h3>BERRY & BERRY</h3>
+        <p>Ladies fragrance.</p>
+        <select class="size-select" id="berry-size">
+          <option value="180">80ml - R180</option>
+          <option value="100">40ml - R100</option>
+        </select>
+        <button onclick="addMscentsToCart('BERRY & BERRY HER', 'berry-size')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/M scents/Black oud classic uni.png" alt="Black Oud Classic Uni">
+        <h3>BLACK OUD CLASSIC</h3>
+        <p>Unisex fragrance.</p>
+        <select class="size-select" id="black-oud-size">
+          <option value="180">80ml - R180</option>
+          <option value="100">40ml - R100</option>
+        </select>
+        <button onclick="addMscentsToCart('BLACK OUD CLASSIC UNI', 'black-oud-size')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/M scents/CLUB DE ABSOLU HIM.png" alt="Club De Absolu Him">
+        <h3>CLUB DE ABSOLU</h3>
+        <p>Men fragrance.</p>
+        <select class="size-select" id="club-size">
+          <option value="180">80ml - R180</option>
+          <option value="100">40ml - R100</option>
+        </select>
+        <button onclick="addMscentsToCart('CLUB DE ABSOLU HIM', 'club-size')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/M scents/D HIM.png" alt="D Him">
+        <h3>D</h3>
+        <p>Men fragrance.</p>
+        <select class="size-select" id="d-size">
+          <option value="180">80ml - R180</option>
+          <option value="100">40ml - R100</option>
+        </select>
+        <button onclick="addMscentsToCart('D HIM', 'd-size')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/M scents/DEZIRE BLUE HIM.png" alt="Dezire Blue Him">
+        <h3>DEZIRE BLUE</h3>
+        <p>Men fragrance.</p>
+        <select class="size-select" id="dezire-blue-size">
+          <option value="180">80ml - R180</option>
+          <option value="100">40ml - R100</option>
+        </select>
+        <button onclick="addMscentsToCart('DEZIRE BLUE HIM', 'dezire-blue-size')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/M scents/DEZIRE RED HIM.png" alt="Dezire Red Him">
+        <h3>DEZIRE RED</h3>
+        <p>Men fragrance.</p>
+        <select class="size-select" id="dezire-red-size">
+          <option value="180">80ml - R180</option>
+          <option value="100">40ml - R100</option>
+        </select>
+        <button onclick="addMscentsToCart('DEZIRE RED HIM', 'dezire-red-size')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/M scents/FLAWLESS HER.png" alt="Flawless Her">
+        <h3>FLAWLESS</h3>
+        <p>Ladies fragrance.</p>
+        <select class="size-select" id="flawless-size">
+          <option value="180">80ml - R180</option>
+          <option value="100">40ml - R100</option>
+        </select>
+        <button onclick="addMscentsToCart('FLAWLESS HER', 'flawless-size')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/M scents/GORGEOUS GILR HER.png" alt="Gorgeous Girl Her">
+        <h3>GORGEOUS GIRL</h3>
+        <p>Ladies fragrance.</p>
+        <select class="size-select" id="gorgeous-size">
+          <option value="180">80ml - R180</option>
+          <option value="100">40ml - R100</option>
+        </select>
+        <button onclick="addMscentsToCart('GORGEOUS GIRL HER', 'gorgeous-size')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/M scents/KASHMIRI OUD UNI.png" alt="Kashmiri Oud Uni">
+        <h3>KASHMIRI OUD</h3>
+        <p>Unisex fragrance.</p>
+        <select class="size-select" id="kashmiri-size">
+          <option value="180">80ml - R180</option>
+          <option value="100">40ml - R100</option>
+        </select>
+        <button onclick="addMscentsToCart('KASHMIRI OUD UNI', 'kashmiri-size')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/M scents/ON MY WAY HER.png" alt="On My Way Her">
+        <h3>ON MY WAY</h3>
+        <p>Ladies fragrance.</p>
+        <select class="size-select" id="on-my-way-size">
+          <option value="180">80ml - R180</option>
+          <option value="100">40ml - R100</option>
+        </select>
+        <button onclick="addMscentsToCart('ON MY WAY HER', 'on-my-way-size')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/M scents/OUD & VANILLA UNI.png" alt="Oud and Vanilla Uni">
+        <h3>OUD & VANILLA</h3>
+        <p>Unisex fragrance.</p>
+        <select class="size-select" id="oud-vanilla-size">
+          <option value="180">80ml - R180</option>
+          <option value="100">40ml - R100</option>
+        </select>
+        <button onclick="addMscentsToCart('OUD & VANILLA UNI', 'oud-vanilla-size')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/M scents/OUD D' GREAT UNI.png" alt="Oud D' Great Uni">
+        <h3>OUD D' GREAT</h3>
+        <p>Unisex fragrance.</p>
+        <select class="size-select" id="oud-great-size">
+          <option value="180">80ml - R180</option>
+          <option value="100">40ml - R100</option>
+        </select>
+        <button onclick="addMscentsToCart('OUD D’ GREAT UNI', 'oud-great-size')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/M scents/S CANDLE FOR HER.png" alt="S Candle For Her">
+        <h3>S CANDLE</h3>
+        <p>Ladies fragrance.</p>
+        <select class="size-select" id="s-candle-size">
+          <option value="180">80ml - R180</option>
+          <option value="100">40ml - R100</option>
+        </select>
+        <button onclick="addMscentsToCart('S CANDLE FOR HER', 's-candle-size')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/M scents/SELVER SENSE HIM.png" alt="Selver Sense Him">
+        <h3>SELVER SENSE</h3>
+        <p>Men fragrance.</p>
+        <select class="size-select" id="selver-size">
+          <option value="180">80ml - R180</option>
+          <option value="100">40ml - R100</option>
+        </select>
+        <button onclick="addMscentsToCart('SELVER SENSE HIM', 'selver-size')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/M scents/STALLION HIM.png" alt="Stallion Him">
+        <h3>STALLION</h3>
+        <p>Men fragrance.</p>
+        <select class="size-select" id="stallion-size">
+          <option value="180">80ml - R180</option>
+          <option value="100">40ml - R100</option>
+        </select>
+        <button onclick="addMscentsToCart('STALLION HIM', 'stallion-size')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/M scents/SUGAR HER.png" alt="Sugar Her">
+        <h3>SUGAR</h3>
+        <p>Ladies fragrance.</p>
+        <select class="size-select" id="sugar-size">
+          <option value="180">80ml - R180</option>
+          <option value="100">40ml - R100</option>
+        </select>
+        <button onclick="addMscentsToCart('SUGAR HER', 'sugar-size')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/M scents/SWEET CANDLE.png" alt="Sweet Candle">
+        <h3>SWEET CANDLE</h3>
+        <p>Ladies fragrance.</p>
+        <select class="size-select" id="sweet-candle-size">
+          <option value="180">80ml - R180</option>
+          <option value="100">40ml - R100</option>
+        </select>
+        <button onclick="addMscentsToCart('SWEET CANDLE', 'sweet-candle-size')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/M scents/WHITE OUD UNI.png" alt="White Oud Uni">
+        <h3>WHITE OUD</h3>
+        <p>Unisex fragrance.</p>
+        <select class="size-select" id="white-oud-size">
+          <option value="180">80ml - R180</option>
+          <option value="100">40ml - R100</option>
+        </select>
+        <button onclick="addMscentsToCart('WHITE OUD UNI', 'white-oud-size')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/M scents/WILD INTENSE HIM.png" alt="Wild Intense Him">
+        <h3>WILD INTENSE</h3>
+        <p>Men fragrance.</p>
+        <select class="size-select" id="wild-intense-size">
+          <option value="180">80ml - R180</option>
+          <option value="100">40ml - R100</option>
+        </select>
+        <button onclick="addMscentsToCart('WILD INTENSE HIM', 'wild-intense-size')">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="cart-panel" id="cart-panel">
+    <div class="cart-box">
+      <button class="close-cart" onclick="closeCart()">×</button>
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <h3 id="cart-total">Total: R0</h3>
+      <button class="checkout-btn" onclick="checkoutWhatsApp()">
+  Checkout via WhatsApp
+</button>
+      <button class="clear-btn" onclick="clearCart()">Clear Cart</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

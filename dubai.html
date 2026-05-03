@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dubai Scents | TM's Perfume Paradise</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assets/logo.png" alt="TM Logo">
+      <span>TM's</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+
+      <li class="dropdown">
+        <a href="#">Shop</a>
+        <ul class="dropdown-menu">
+          <li><a href="skincare.html">Skin Care</a></li>
+          <li><a href="villa.html">Villa</a></li>
+          <li><a href="mscents.html">M-scents</a></li>
+          <li><a href="fine-fragrances.html">Fine Fragrances</a></li>
+          <li><a href="dubai.html">Dubai Scents</a></li>
+        </ul>
+      </li>
+
+      <li><a href="item-request.html">Item Request</a></li>
+      <li><a href="#">Contact</a></li>
+      <li>
+        <a class="cart-btn" href="#" onclick="openCart()">
+          Cart <span id="cart-count">0</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="shop-hero">
+    <p class="section-tag">Dubai Collection</p>
+    <h1>Luxury Dubai Scents</h1>
+    <p>Rich oud, powerful projection and long-lasting luxury fragrances.</p>
+  </section>
+
+  <section class="products-section">
+
+    <div class="products-grid">
+
+      <!-- R450 PRODUCTS -->
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/ASAD.jpeg" alt="Asad">
+        <h3>ASAD</h3>
+        <p>Luxury Dubai fragrance.</p>
+        <h4>R450</h4>
+        <button onclick="addToCart('ASAD', 450)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/MAAHIR.jpeg" alt="Maahir">
+        <h3>MAAHIR</h3>
+        <p>Luxury Dubai fragrance.</p>
+        <h4>R450</h4>
+        <button onclick="addToCart('MAAHIR', 450)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/MochaWood.jpeg" alt="MochaWood">
+        <h3>MOCHAWOOD</h3>
+        <p>Luxury Dubai fragrance.</p>
+        <h4>R450</h4>
+        <button onclick="addToCart('MOCHAWOOD', 450)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/BADE'E AL OUD.jpeg" alt="Badee Al Oud">
+        <h3>BADE'E AL OUD</h3>
+        <p>Luxury oud fragrance.</p>
+        <h4>R450</h4>
+        <button onclick="addToCart(`BADE'E AL OUD`, 450)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/OUD MADNESS.jpeg" alt="Oud Madness">
+        <h3>OUD MADNESS</h3>
+        <p>Luxury oud fragrance.</p>
+        <h4>R450</h4>
+        <button onclick="addToCart('OUD MADNESS', 450)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/TOOL BOX.jpeg" alt="Tool Box">
+        <h3>TOOL BOX</h3>
+        <p>Luxury Dubai fragrance.</p>
+        <h4>R450</h4>
+        <button onclick="addToCart('TOOL BOX', 450)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/CHARUTO.jpeg" alt="Charuto">
+        <h3>CHARUTO</h3>
+        <p>Luxury Dubai fragrance.</p>
+        <h4>R450</h4>
+        <button onclick="addToCart('CHARUTO', 450)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/yara.jpeg" alt="Yara">
+        <h3>YARA</h3>
+        <p>Luxury ladies fragrance.</p>
+        <h4>R450</h4>
+        <button onclick="addToCart('YARA', 450)">Add to Cart</button>
+      </div>
+
+      <!-- R350 PRODUCTS -->
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/Intanse noir.jpeg" alt="Intense Noir">
+        <h3>INTENSE NOIR</h3>
+        <p>Dubai fragrance.</p>
+        <h4>R350</h4>
+        <button onclick="addToCart('INTENSE NOIR', 350)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/Brown orchid.jpeg" alt="Brown Orchid">
+        <h3>BROWN ORCHID</h3>
+        <p>Dubai fragrance.</p>
+        <h4>R350</h4>
+        <button onclick="addToCart('BROWN ORCHID', 350)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/ramz.jpeg" alt="Ramz">
+        <h3>RAMZ</h3>
+        <p>Dubai fragrance.</p>
+        <h4>R350</h4>
+        <button onclick="addToCart('RAMZ', 350)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/Tobacco.jpeg" alt="Tobacco Gourman">
+        <h3>TOBACCO GOURMAN</h3>
+        <p>Dubai fragrance.</p>
+        <h4>R350</h4>
+        <button onclick="addToCart('TOBACCO GOURMAN', 350)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/Barakkat.jpeg" alt="Barakkat">
+        <h3>BARAKKAT</h3>
+        <p>Dubai fragrance.</p>
+        <h4>R350</h4>
+        <button onclick="addToCart('BARAKKAT', 350)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/oud al layl brown.jpeg" alt="Oud Al Layl Aswad">
+        <h3>OUD AL LAYL ASWAD</h3>
+        <p>Luxury oud fragrance.</p>
+        <h4>R350</h4>
+        <button onclick="addToCart('OUD AL LAYL ASWAD', 350)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/Launo.jpeg" alt="Launo">
+        <h3>LAUNO</h3>
+        <p>Dubai fragrance.</p>
+        <h4>R350</h4>
+        <button onclick="addToCart('LAUNO', 350)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/zara.jpeg" alt="Zara Man">
+        <h3>ZARA MAN</h3>
+        <p>Dubai fragrance.</p>
+        <h4>R350</h4>
+        <button onclick="addToCart('ZARA MAN', 350)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/Intense wayfarer.jpeg" alt="Intense Wayfarer">
+        <h3>INTENSE WAYFARER</h3>
+        <p>Dubai fragrance.</p>
+        <h4>R350</h4>
+        <button onclick="addToCart('INTENSE WAYFARER', 350)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/oud al layl.jpeg" alt="Oud Al Layl">
+        <h3>OUD AL LAYL</h3>
+        <p>Luxury oud fragrance.</p>
+        <h4>R350</h4>
+        <button onclick="addToCart('OUD AL LAYL', 350)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/berries weekend.jpeg" alt="Berries Weekend">
+        <h3>BERRIES WEEKEND</h3>
+        <p>Ladies fragrance.</p>
+        <h4>R350</h4>
+        <button onclick="addToCart('BERRIES WEEKEND', 350)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/champ de rose.jpeg" alt="Cham De Rose">
+        <h3>CHAM DE ROSE</h3>
+        <p>Luxury ladies fragrance.</p>
+        <h4>R350</h4>
+        <button onclick="addToCart('CHAM DE ROSE', 350)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/chic girl.jpeg" alt="Chic Girl">
+        <h3>CHIC GIRL</h3>
+        <p>Ladies fragrance.</p>
+        <h4>R350</h4>
+        <button onclick="addToCart('CHIC GIRL', 350)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/dolores.jpeg" alt="Dolores">
+        <h3>DOLORES</h3>
+        <p>Ladies fragrance.</p>
+        <h4>R350</h4>
+        <button onclick="addToCart('DOLORES', 350)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/Intense peach.jpeg" alt="Intense Peach">
+        <h3>INTENSE PEACH</h3>
+        <p>Ladies fragrance.</p>
+        <h4>R350</h4>
+        <button onclick="addToCart('INTENSE PEACH', 350)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/La vida es bella.jpeg" alt="La Vida Es Bella">
+        <h3>LA VIDA ES BELLA</h3>
+        <p>Ladies fragrance.</p>
+        <h4>R350</h4>
+        <button onclick="addToCart('LA VIDA ES BELLA', 350)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/Lady presidente.jpeg" alt="Lady Presidente">
+        <h3>LADY PRESIDENTE</h3>
+        <p>Ladies fragrance.</p>
+        <h4>R350</h4>
+        <button onclick="addToCart('LADY PRESIDENTE', 350)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/Mousof wardi.jpeg" alt="Mousof Wardi">
+        <h3>MOUSOF WARDI</h3>
+        <p>Ladies fragrance.</p>
+        <h4>R350</h4>
+        <button onclick="addToCart('MOUSOF WARDI', 350)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/ophylia.jpeg" alt="Ophylia">
+        <h3>OPHYLIA</h3>
+        <p>Ladies fragrance.</p>
+        <h4>R350</h4>
+        <button onclick="addToCart('OPHYLIA', 350)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/Oud ispahan.jpeg" alt="Oud Ispahan">
+        <h3>OUD ISPAHAN</h3>
+        <p>Luxury oud fragrance.</p>
+        <h4>R350</h4>
+        <button onclick="addToCart('OUD ISPAHAN', 350)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/perla.jpeg" alt="Perla">
+        <h3>PERLA</h3>
+        <p>Ladies fragrance.</p>
+        <h4>R350</h4>
+        <button onclick="addToCart('PERLA', 350)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/rose seduction.jpeg" alt="Rose Seduction">
+        <h3>ROSE SEDUCTION</h3>
+        <p>Ladies fragrance.</p>
+        <h4>R350</h4>
+        <button onclick="addToCart('ROSE SEDUCTION', 350)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/DUBAI SCENTS/velvet rose.jpeg" alt="Velvet Rose">
+        <h3>VELVET ROSE</h3>
+        <p>Luxury rose fragrance.</p>
+        <h4>R350</h4>
+        <button onclick="addToCart('VELVET ROSE', 350)">Add to Cart</button>
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="cart-panel" id="cart-panel">
+    <div class="cart-box">
+      <button class="close-cart" onclick="closeCart()">×</button>
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <h3 id="cart-total">Total: R0</h3>
+
+<button class="checkout-btn" onclick="checkoutWhatsApp()">
+  Checkout via WhatsApp
+</button>
+
+      <button class="clear-btn" onclick="clearCart()">
+        Clear Cart
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

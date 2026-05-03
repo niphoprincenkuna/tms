@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skin Care | TM's Perfume Paradise</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assets/logo.png" alt="TM Logo">
+      <span>TM's</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+
+      <li class="dropdown">
+        <a href="shop.html">Shop</a>
+        <ul class="dropdown-menu">
+          <li><a href="skincare.html">Skin Care</a></li>
+          <li><a href="villa.html">Villa</a></li>
+          <li><a href="mscents.html">M-scents</a></li>
+          <li><a href="fine-fragrances.html">Fine Fragrances</a></li>
+          <li><a href="dubai.html">Dubai Scents</a></li>
+        </ul>
+      </li>
+
+      <li><a href="item-request.html">Item Request</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="cart-btn" href="cart.html" onclick="openCart()">Cart <span id="cart-count">0</span></a></li>
+    </ul>
+  </nav>
+
+  <section class="shop-hero">
+    <p class="section-tag">Skin Care Collection</p>
+    <h1>Glow With Confidence</h1>
+    <p>Natural beauty essentials for bright, smooth and radiant skin.</p>
+  </section>
+
+  <section class="products-section">
+    <div class="products-grid">
+
+      <div class="product-card">
+        <img src="assets/skincare/cream.png" alt="Dark Inner Thigh Cream">
+        <h3>Dark Inner Thigh Cream</h3>
+        <p>Treats hyperpigmentation, uneven skin tone and texture issues.</p>
+        <h4>R100</h4>
+        <button onclick="addToCart('Dark Inner Thigh Cream', 100)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/skincare/scrub.png" alt="Turmeric Scrub">
+        <h3>Turmeric Scrub</h3>
+        <p>Exfoliates, brightens and improves skin tone.</p>
+        <h4>R100</h4>
+        <button onclick="addToCart('Turmeric Scrub', 100)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/skincare/soap.png" alt="Turmeric Soap">
+        <h3>Turmeric Soap</h3>
+        <p>Brightens dull skin, reduces dark spots, acne and inflammation.</p>
+        <h4>R50</h4>
+        <button onclick="addToCart('Turmeric Soap', 50)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/skincare/marks.png" alt="Stretchmarks Oil">
+        <h3>Stretchmarks Oil</h3>
+        <p>Hydrates, improves elasticity and helps fade stretch marks.</p>
+        <h4>R80</h4>
+        <button onclick="addToCart('Stretchmarks Oil', 80)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/skincare/carrot.png" alt="Carrot Oil">
+        <h3>Carrot Oil</h3>
+        <p>Powerful antioxidant, emollient and natural anti-aging oil.</p>
+        <h4>R100</h4>
+        <button onclick="addToCart('Carrot Oil', 100)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/skincare/glow.png" alt="Glow Serum">
+        <h3>Glow Serum</h3>
+        <p>Brightens, hydrates and improves radiance, tone and texture.</p>
+        <h4>R120</h4>
+        <button onclick="addToCart('Glow Serum', 120)">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="cart-panel" id="cart-panel">
+    <div class="cart-box">
+      <button class="close-cart" onclick="closeCart()">×</button>
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <h3 id="cart-total">Total: R0</h3>
+<button class="checkout-btn" onclick="checkoutWhatsApp()">
+  Checkout via WhatsApp
+</button>
+      <button class="clear-btn" onclick="clearCart()">Clear Cart</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

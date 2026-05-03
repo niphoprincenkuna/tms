@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fine Fragrances | TM's Perfume Paradise</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assets/logo.png" alt="TM Logo">
+      <span>TM's</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+
+      <li class="dropdown">
+        <a href="#">Shop</a>
+        <ul class="dropdown-menu">
+          <li><a href="skincare.html">Skin Care</a></li>
+          <li><a href="villa.html">Villa</a></li>
+          <li><a href="mscents.html">M-scents</a></li>
+          <li><a href="fine-fragrances.html">Fine Fragrances</a></li>
+          <li><a href="dubai.html">Dubai Scents</a></li>
+        </ul>
+      </li>
+
+      <li><a href="item-request.html">Item Request</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a class="cart-btn" href="#" onclick="openCart()">Cart <span id="cart-count">0</span></a></li>
+    </ul>
+  </nav>
+
+  <section class="shop-hero">
+    <p class="section-tag">Fine Fragrances</p>
+    <h1>Inspired Perfumes</h1>
+    <p>R65 each. Choose your bottle and scent.</p>
+  </section>
+
+  <section class="villa-section">
+
+    <div class="villa-product">
+      <div class="villa-image">
+        <img src="assets/Fine/black.png" alt="Fine Fragrance Men Black Bottle">
+      </div>
+
+      <div class="villa-details">
+        <p class="section-tag">Men's Perfume</p>
+        <h3>R65</h3>
+
+        <label>Choose scent</label>
+        <select id="fine-men-scent">
+          <option>212 VIP</option>
+          <option>ACQUA DI GIO</option>
+          <option>BLUE DE CHANEL</option>
+          <option>BVLGARI MAN</option>
+          <option>DESIRE</option>
+          <option>FAHRENHEIT</option>
+          <option>HUGO</option>
+          <option>INVICTUS</option>
+          <option>ISSEY MIYAKE</option>
+          <option>JOOP</option>
+          <option>LEGEND</option>
+          <option>LIGHT BLUE</option>
+          <option>ONE MILLION</option>
+          <option>ONLY THE BRAVE</option>
+          <option>SAUVAGE</option>
+          <option>SCANDAL</option>
+          <option>TERRE D’HERMES</option>
+          <option>TOM FORD NOIR</option>
+          <option>VERSACE EROS</option>
+          <option>VERSACE EROS POUR HOMME</option>
+        </select>
+
+        <button onclick="addFineFragranceToCart('Fine Fragrance Men Black Bottle', 'fine-men-scent')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="villa-product reverse">
+      <div class="villa-image">
+        <img src="assets/Fine/white.png" alt="Fine Fragrance Ladies White Bottle">
+      </div>
+
+      <div class="villa-details">
+        <p class="section-tag">Ladies Perfume</p>
+        <h3>R65</h3>
+
+        <label>Choose scent</label>
+        <select id="fine-ladies-scent">
+          <option>ALIEN</option>
+          <option>ARMANI SI</option>
+          <option>AROMATICS ELIXIR</option>
+          <option>BE DELICIOUS</option>
+          <option>BLACK OPIUM</option>
+          <option>CHANEL NO 5</option>
+          <option>COCO MADEMOISELLE</option>
+          <option>ELIE SAAB</option>
+          <option>ISSEY MIYAKE</option>
+          <option>GOOD GIRL</option>
+          <option>GUCCI RUSH</option>
+          <option>HYPNOTIC POISON</option>
+          <option>J’ADORE</option>
+          <option>LA VIE EST BELLE</option>
+          <option>LADY MILLION</option>
+          <option>LIGHT BLUE</option>
+          <option>NARCISO RODRIGUES</option>
+          <option>OLYMPEA</option>
+          <option>SCANDAL</option>
+          <option>VERSACE EROS</option>
+        </select>
+
+        <button onclick="addFineFragranceToCart('Fine Fragrance Ladies White Bottle', 'fine-ladies-scent')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="villa-product">
+      <div class="villa-image">
+        <img src="assets/Fine/black and white.png" alt="Fine Fragrance Unisex Bottle">
+      </div>
+
+      <div class="villa-details">
+        <p class="section-tag">Unisex Perfume</p>
+        <h3>R65</h3>
+
+        <label>Choose scent</label>
+        <select id="fine-unisex-scent">
+          <option>BACCARAT ROUGE 540</option>
+          <option>TOM FORD OUD WOOD</option>
+          <option>CREED AVENTUS</option>
+          <option>GUCCI INTENSE OUD</option>
+          <option>BYREDO MOJAVE GHOST</option>
+          <option>LOUIS VUITTON OMBRE NOMADE</option>
+        </select>
+
+        <button onclick="addFineFragranceToCart('Fine Fragrance Unisex Bottle', 'fine-unisex-scent')">Add to Cart</button>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="cart-panel" id="cart-panel">
+    <div class="cart-box">
+      <button class="close-cart" onclick="closeCart()">×</button>
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <h3 id="cart-total">Total: R0</h3>
+<button class="checkout-btn" onclick="checkoutWhatsApp()">
+  Checkout via WhatsApp
+</button>
+      <button class="clear-btn" onclick="clearCart()">Clear Cart</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

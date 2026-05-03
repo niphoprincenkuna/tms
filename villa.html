@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Villa Scents | TM's Perfume Paradise</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assets/logo.png" alt="TM Logo">
+      <span>TM's</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+
+      <li class="dropdown">
+        <a href="#">Shop</a>
+        <ul class="dropdown-menu">
+          <li><a href="skincare.html">Skin Care</a></li>
+          <li><a href="villa.html">Villa</a></li>
+          <li><a href="mscents.html">M-scents</a></li>
+          <li><a href="fine-fragrances.html">Fine Fragrances</a></li>
+          <li><a href="dubai.html">Dubai Scents</a></li>
+        </ul>
+      </li>
+
+      <li><a href="item-request.html">Item Request</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="cart-btn" href="cart.html" onclick="openCart()">Cart <span id="cart-count">0</span></a></li>
+    </ul>
+  </nav>
+
+  <section class="shop-hero">
+    <p class="section-tag">Villa Scents</p>
+    <h1>Choose Your Villa Scent</h1>
+    <p>One bottle style for men, one for ladies. Choose your scent and add it to cart.</p>
+  </section>
+
+  <section class="villa-section">
+
+    <div class="villa-product">
+      <div class="villa-image">
+        <img src="assets/villa/MEN.png" alt="Villa Men Bottle">
+      </div>
+
+      <div class="villa-details">
+        <p class="section-tag">For Men</p>
+        <h2>Villa Men</h2>
+        <h3>R160</h3>
+
+        <label>Choose scent</label>
+        <select id="men-scent">
+          <option>Armani - Acqua di Gio</option>
+          <option>Armani - Black Code</option>
+          <option>Armani - Verona</option>
+          <option>Antonio Banderas - Seduction</option>
+          <option>Azzaro - Wanted</option>
+          <option>Bvlgari - Man</option>
+          <option>Boss - Bottled</option>
+          <option>Baccarat Rouge</option>
+          <option>Carolina Herrera - 212 VIP</option>
+          <option>Carolina Herrera - 212 Sexy Men</option>
+          <option>Chanel - Bleu de Chanel</option>
+          <option>Diesel - Bad</option>
+          <option>Diesel - Only the Brave</option>
+          <option>Diesel - No Limits</option>
+          <option>Dior - Oud Ispahan</option>
+          <option>D&G - Light Blue</option>
+          <option>Dunhill - Blue</option>
+          <option>Dunhill - Desire</option>
+          <option>Dunhill - Black</option>
+          <option>Dunhill - Icon</option>
+          <option>Dior - Nino</option>
+          <option>Dior - Sauvage</option>
+          <option>Givenchy - Just Gentleman</option>
+          <option>Gucci - Gucci by Gucci</option>
+          <option>Gucci - Oud Intense</option>
+          <option>Hugo Boss - Hugo</option>
+          <option>Hugo Boss - Red</option>
+          <option>Hugo Boss - Orange</option>
+          <option>Hugo Boss - Original</option>
+          <option>Issey Miyake - Pour Homme</option>
+          <option>JPG - Scandal</option>
+          <option>Kilian - Black Phantom</option>
+          <option>Lacoste - Essential</option>
+          <option>Mont Blanc - Legend</option>
+          <option>Montale - Intense Café</option>
+          <option>Montale - Black Oud</option>
+          <option>MFK - Oud Satin Mood</option>
+          <option>MFK - Grand Soir</option>
+          <option>Night in Arabia</option>
+          <option>Paco Rabanne - 1 Million</option>
+          <option>Paco Rabanne - Pure XS</option>
+          <option>Paco Rabanne - Black XS</option>
+          <option>Paco Rabanne - Invictus</option>
+          <option>Polo - Sport</option>
+          <option>Ralph Lauren - Polo</option>
+          <option>Tom Ford - Noir</option>
+          <option>Tom Ford - Oud Wood</option>
+          <option>Tom Ford - Tobacco</option>
+          <option>Tzar</option>
+          <option>White Oud</option>
+          <option>Versace - Pour Homme</option>
+          <option>Versace - Blue Jeans</option>
+          <option>YSL - Kouros Silver</option>
+          <option>YSL - M7</option>
+        </select>
+
+        <button onclick="addVillaToCart('Villa Men', 'men-scent')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="villa-product reverse">
+      <div class="villa-image">
+        <img src="assets/villa/WEMEN.png" alt="Villa Ladies Bottle">
+      </div>
+
+      <div class="villa-details">
+        <p class="section-tag">For Ladies</p>
+        <h2>Villa Ladies</h2>
+        <h3>R160</h3>
+
+        <label>Choose scent</label>
+        <select id="ladies-scent">
+          <option>Armani - Si</option>
+          <option>Armani - Caribelle</option>
+          <option>Armani - Clave</option>
+          <option>Armani - My Way</option>
+          <option>Beyonce - Heat</option>
+          <option>Britney - Fantasy</option>
+          <option>Baccarat Rouge</option>
+          <option>Dior - Oud Ispahan</option>
+          <option>Carolina Herrera - Good Girl</option>
+          <option>Chanel Coco - Mademoiselle</option>
+          <option>Christian Dior - Hypnotic Poison</option>
+          <option>Christian Dior - J'adore</option>
+          <option>DKNY - Delicious</option>
+          <option>DKNY - Tempted</option>
+          <option>D&G - Light Blue</option>
+          <option>Elie Saab - Girl of Now</option>
+          <option>Elizabeth Arden - Red Door</option>
+          <option>Estee Lauder - Pleasures</option>
+          <option>Gabrielle Meal - New York</option>
+          <option>Gabrielle Meal - London</option>
+          <option>Gucci - Oud Intense</option>
+          <option>Gucci - Rush</option>
+          <option>Issey Miyake - L'eau D'Issey</option>
+          <option>Jimmy Choo</option>
+          <option>JPG - Scandal</option>
+          <option>JPG - La Belle</option>
+          <option>Kilian - Love Don't Be Shy</option>
+          <option>Kilian - Black Phantom</option>
+          <option>Lancome - La Vie Est Belle</option>
+          <option>Lacoste - Touch of Pink</option>
+          <option>Michael Kors - First Love</option>
+          <option>Michael Kors - Soft Kisses</option>
+          <option>Michael Kors - Rossi</option>
+          <option>Montale - Intense Café</option>
+          <option>MFK - Grand Soir</option>
+          <option>MFK - Oud Satin Mood</option>
+          <option>Nicki Minaj - Pink Friday</option>
+          <option>Narcisse - Chloe</option>
+          <option>Paco Rabanne - Olympea</option>
+          <option>Paco Rabanne - Lady Million</option>
+          <option>Roberto Cavalli - Aqua</option>
+          <option>Thierry Mugler - Alien</option>
+          <option>Tom Ford Black - Aimee</option>
+          <option>Tom Ford Black - Orchid</option>
+          <option>Tom Ford Black - Sweet Aura</option>
+          <option>Thierry Mugler - Angel</option>
+          <option>Versace - Eclat</option>
+          <option>Versace - Crystal Noir</option>
+          <option>YSL - Black Opium</option>
+          <option>YSL - Libre</option>
+          <option>Kim Kardashian - Celebrated</option>
+          <option>Louis Vuitton - Sophisticated</option>
+          <option>Carolina Herrera - 212 VIP</option>
+          <option>White Oud</option>
+        </select>
+
+        <button onclick="addVillaToCart('Villa Ladies', 'ladies-scent')">Add to Cart</button>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="cart-panel" id="cart-panel">
+    <div class="cart-box">
+      <button class="close-cart" onclick="closeCart()">×</button>
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <h3 id="cart-total">Total: R0</h3>
+<button class="checkout-btn" onclick="checkoutWhatsApp()">
+  Checkout via WhatsApp
+</button>
+      <button class="clear-btn" onclick="clearCart()">Clear Cart</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

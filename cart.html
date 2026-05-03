@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart | TM's Perfume Paradise</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assets/logo.png" alt="TM Logo">
+      <span>TM's</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+
+      <li class="dropdown">
+        <a href="#">Shop</a>
+        <ul class="dropdown-menu">
+          <li><a href="skincare.html">Skin Care</a></li>
+          <li><a href="villa.html">Villa</a></li>
+          <li><a href="mscents.html">M-scents</a></li>
+          <li><a href="fine-fragrances.html">Fine Fragrances</a></li>
+          <li><a href="dubai.html">Dubai Scents</a></li>
+        </ul>
+      </li>
+
+      <li><a href="item-request.html">Item Request</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="cart-btn" href="cart.html">Cart <span id="cart-count">0</span></a></li>
+    </ul>
+  </nav>
+
+  <section class="cart-page-hero">
+    <p class="section-tag">Your Cart</p>
+    <h1>Review Your Order</h1>
+    <p>Check your items before sending your order to WhatsApp.</p>
+  </section>
+
+  <section class="cart-page-section">
+    <div class="cart-page-box">
+
+      <div id="cart-page-items"></div>
+
+      <div class="cart-summary">
+        <h2>Order Summary</h2>
+        <h3 id="cart-page-total">Total: R0</h3>
+
+        <label>Payment Option</label>
+        <select id="payment-option">
+          <option value="">Choose payment option</option>
+          <option value="Pay Immediately">Pay Immediately</option>
+          <option value="End Of Month">End Of Month</option>
+        </select>
+
+        <button onclick="checkoutWhatsApp()">Checkout via WhatsApp</button>
+        <button class="clear-cart-page" onclick="clearCart()">Clear Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
